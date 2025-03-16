@@ -1,0 +1,25 @@
+name: auto_gridview
+description: "A Flutter package that provides a flexible and responsive GridView widget."
+
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+# Add the homepage and repository fields
+homepage: "https://github.com/MgThiha-Coding/auto_gridview"
+repository: "https://github.com/MgThiha-Coding/auto_gridview"
