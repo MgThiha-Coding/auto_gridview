@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.0.0+1 (March 2025)
+## version: ^1.0.0 (March 2025)
 
 - Initial release of the AutoGridView package.
 - Added basic features: auto-resizing grid with customizable border, aspect ratio, and background color.

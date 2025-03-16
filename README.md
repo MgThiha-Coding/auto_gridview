@@ -19,50 +19,56 @@ To use the **AutoGridView** package, add it as a dependency in your `pubspec.yam
 
 ```yaml
 dependencies:
-  auto_gridview: ^1.0.0
+   auto_gridview: ^1.1.0
+```
+
+---
 
 ## 📚 Usage
 
+```dart
 import 'package:auto_gridview/auto_gridview.dart';
 import 'package:flutter/material.dart';
 
 void main() {
-runApp(const MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
-const MyApp({super.key});
+  const MyApp({super.key});
 
-@override
-Widget build(BuildContext context) {
-return MaterialApp(
-home: Scaffold(
-appBar: const AppBar(title: Text("AutoGridView Demo")),
-body: Padding(
-padding: const EdgeInsets.all(10.0),
-child: AutoGridView(
-itemcount: 20,
-crossAxisCount: 3,
-childAspectRadio: 1.5,
-borderRadius: 12.0,
-borderWidth: 2.0,
-borderColor: Colors.blue,
-backgroundColor: Colors.grey,
-childItemWidget: Column(
-mainAxisAlignment: MainAxisAlignment.center,
-children: const [
-Icon(Icons.star, color: Colors.amber, size: 30),
-SizedBox(height: 5),
-Text("Star", style: TextStyle(fontSize: 16)),
-],
-),
-),
-),
-),
-);
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: const AppBar(title: Text("AutoGridView Demo")),
+        body: Padding(
+          padding: const EdgeInsets.all(10.0),
+          child: AutoGridView(
+            itemcount: 20,
+            crossAxisCount: 3,
+            childAspectRadio: 1.5,
+            borderRadius: 12.0,
+            borderWidth: 2.0,
+            borderColor: Colors.blue,
+            backgroundColor: Colors.grey,
+            childItemWidget: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: const [
+                Icon(Icons.star, color: Colors.amber, size: 30),
+                SizedBox(height: 5),
+                Text("Star", style: TextStyle(fontSize: 16)),
+              ],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
 }
-}
+```
 
+---
 
 ## 🛠️ Customization Options
 

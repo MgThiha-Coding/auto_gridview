@@ -2,7 +2,7 @@ name: auto_gridview
 description: "A Flutter package that provides a flexible and responsive GridView widget."
 
 
-version: 1.0.0+1
+version: 1.1.0+3
 
 environment:
   sdk: ^3.6.2
