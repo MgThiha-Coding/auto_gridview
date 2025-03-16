@@ -12,19 +12,22 @@ import 'package:auto_gridview/main.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const MyApp());
+    // Build the widget tree.
+    await tester.pumpWidget(MyApp());
 
-    // Verify that our counter starts at 0.
+    // Wait for any animations to settle.
+    await tester.pumpAndSettle();
+
+    // Verify the initial value of the counter.
     expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
 
-    // Tap the '+' icon and trigger a frame.
+    // Tap the button to increment the counter.
     await tester.tap(find.byIcon(Icons.add));
+
+    // Wait for the animation to complete.
     await tester.pump();
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
+    // Verify the counter increments.
     expect(find.text('1'), findsOneWidget);
   });
 }

@@ -19,7 +19,7 @@ To use the **AutoGridView** package, add it as a dependency in your `pubspec.yam
 
 ```yaml
 dependencies:
-   auto_gridview: ^1.1.0
+  auto_gridview: ^1.2.0
 ```
 
 ---
@@ -47,7 +47,7 @@ class MyApp extends StatelessWidget {
           child: AutoGridView(
             itemcount: 20,
             crossAxisCount: 3,
-            childAspectRadio: 1.5,
+            childAspectRatio: 1.5,
             borderRadius: 12.0,
             borderWidth: 2.0,
             borderColor: Colors.blue,

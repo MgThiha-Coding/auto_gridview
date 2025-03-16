@@ -7,6 +7,7 @@ import 'package:flutter/material.dart';
 /// background color, and aspect ratio.
 ///
 /// **Example Usage:**
+///
 /// ```dart
 /// AutoGridView(
 ///   itemcount: 20,
@@ -15,7 +16,7 @@ import 'package:flutter/material.dart';
 ///   borderWidth: 2.0,
 ///   borderColor: Colors.blue,
 ///   backgroundColor: Colors.grey[200],
-///   childAspectRadio: 1.5,
+///   childAspectRatio: 1.5,
 ///   childItemWidget: Icon(Icons.star),
 /// );
 /// ```
@@ -40,8 +41,8 @@ class AutoGridView extends StatefulWidget {
   final Color? backgroundColor;
 
   /// The aspect ratio of each grid item (width / height).
-  /// Defaults to `1.0` if not provided.
-  final double? childAspectRadio;
+  /// Defaults to 1.0 if not provided.
+  final double? childAspectRatio;
 
   /// The widget to display inside each grid item.
   final Widget childItemWidget;
@@ -55,7 +56,7 @@ class AutoGridView extends StatefulWidget {
     this.borderWidth,
     this.borderColor,
     required this.childItemWidget,
-    this.childAspectRadio,
+    this.childAspectRatio,
     this.backgroundColor,
   });
 
@@ -86,7 +87,7 @@ class _AutoGridviewState extends State<AutoGridView> {
           crossAxisSpacing: 10,
           mainAxisSpacing: 10,
           childAspectRatio:
-              widget.childAspectRadio ?? 1.0, // Default aspect ratio
+              widget.childAspectRatio ?? 1.0, // Default aspect ratio
         ),
         itemBuilder: (context, index) {
           return Container(

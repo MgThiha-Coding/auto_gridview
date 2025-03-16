@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
           child: AutoGridView(
             itemcount: 20, // Total number of grid items
             crossAxisCount: 3, // Manually set cross axis count (optional)
-            childAspectRadio: 1.5, // Adjust width-to-height ratio
+            childAspectRatio: 1.5, // Adjust width-to-height ratio
             borderRadius: 12.0, // Rounded corners
             borderWidth: 2.0, // Border thickness
             borderColor: Colors.blue, // Border color
